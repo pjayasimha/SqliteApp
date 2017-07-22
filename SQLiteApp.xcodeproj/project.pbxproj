@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6374387E1F2365F4006CB597 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6374387D1F2365F4006CB597 /* libsqlite3.0.tbd */; };
 		63B4A1DC1A81C58100243F9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B4A1DB1A81C58100243F9D /* main.m */; };
 		63B4A1DF1A81C58100243F9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B4A1DE1A81C58100243F9D /* AppDelegate.m */; };
 		63B4A1E21A81C58100243F9D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B4A1E11A81C58100243F9D /* ViewController.m */; };
 		63B4A1E51A81C58100243F9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63B4A1E31A81C58100243F9D /* Main.storyboard */; };
 		63B4A1E71A81C58100243F9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63B4A1E61A81C58100243F9D /* Images.xcassets */; };
 		63B4A1F31A81C58100243F9D /* SQLiteAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63B4A1F21A81C58100243F9D /* SQLiteAppTests.m */; };
+		63B4A1FD1A81C5A400243F9D /* StudentDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 63B4A1FC1A81C5A400243F9D /* StudentDB.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6374387D1F2365F4006CB597 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		63B4A1D61A81C58100243F9D /* SQLiteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQLiteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B4A1DA1A81C58100243F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63B4A1DB1A81C58100243F9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		63B4A1EC1A81C58100243F9D /* SQLiteAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SQLiteAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63B4A1F11A81C58100243F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63B4A1F21A81C58100243F9D /* SQLiteAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLiteAppTests.m; sourceTree = "<group>"; };
+		63B4A1FC1A81C5A400243F9D /* StudentDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = StudentDB.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6374387E1F2365F4006CB597 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +63,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6374387C1F2365F4006CB597 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6374387D1F2365F4006CB597 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		63B4A1CD1A81C58000243F9D = {
 			isa = PBXGroup;
 			children = (
 				63B4A1D81A81C58100243F9D /* SQLiteApp */,
 				63B4A1EF1A81C58100243F9D /* SQLiteAppTests */,
 				63B4A1D71A81C58100243F9D /* Products */,
+				6374387C1F2365F4006CB597 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +93,7 @@
 		63B4A1D81A81C58100243F9D /* SQLiteApp */ = {
 			isa = PBXGroup;
 			children = (
+				63B4A1FC1A81C5A400243F9D /* StudentDB.sqlite */,
 				63B4A1DD1A81C58100243F9D /* AppDelegate.h */,
 				63B4A1DE1A81C58100243F9D /* AppDelegate.m */,
 				63B4A1E01A81C58100243F9D /* ViewController.h */,
@@ -198,6 +213,7 @@
 			files = (
 				63B4A1E51A81C58100243F9D /* Main.storyboard in Resources */,
 				63B4A1E71A81C58100243F9D /* Images.xcassets in Resources */,
+				63B4A1FD1A81C5A400243F9D /* StudentDB.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +418,7 @@
 				63B4A1F81A81C58100243F9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63B4A1F91A81C58100243F9D /* Build configuration list for PBXNativeTarget "SQLiteAppTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +427,7 @@
 				63B4A1FB1A81C58100243F9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
